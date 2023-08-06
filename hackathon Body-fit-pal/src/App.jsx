@@ -7,9 +7,9 @@ import './App.css'
 import {Calendar,Nutrition,Workouts, Area,Line,Pie,HomePage,BmiCalculator,SleepMonitor} from './pages/'
 //components
 import {Navbar,Footer,Sidebar,ThemeSettings} from './components/index'
-
+import { useStateContext } from './context/ContextGeneral'
 const App =()=> {
-  const  activeMenu= true;
+  const  {activeMenu} = useStateContext();
   const currentMode = false;
   const currentColor = true;
 
